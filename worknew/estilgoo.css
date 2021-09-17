@@ -1,0 +1,23 @@
+.body {
+    align-items: center;
+}
+
+.box {
+    width:300px;
+    height:100px;
+    background-color:#ffff;
+    border-radius: 30px 30px 30px 30px;
+
+}
+
+.top-button {
+    border-color: blue;
+    text-color: #ffff;
+    background-color: blue;
+}
+
+.search-bottoms {
+    border-color: rgb(211, 209, 209)196, 182, 182)196, 182, 182);
+    text-color: #ffff;
+    background-color: rgb(211, 209, 209)196, 182, 182)196, 182, 182);
+}

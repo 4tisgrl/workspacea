@@ -1,0 +1,97 @@
+* {
+    margin:0px;
+    padding:0px;
+}
+
+body {
+    font-family: sans-serif;
+    color: #FFFF;
+
+
+}
+
+.main {
+    height: 780px;
+    background-image: url("fundosombra.png");
+    box-shadow: 780px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+}
+.main-child {
+    z-index: 1;
+}
+
+.main h1 {
+    font-size: 50px;
+    max-width: 480px;
+    text-align: center;
+    position: relative;
+}
+
+.main h3 {
+    font-size: 20px;
+    max-width: 100px;
+    text-align: center;
+}
+
+.main h4 {
+    font-size: 15px;
+    max-width: 480px;
+    text-align: center;
+
+}
+
+.form-cta {
+    display: grid;
+    grid-template-columns: 500 px 250 px;
+    margin-top: 35px;
+    margin-bottom: 10px;
+
+}
+
+.form-cta input {
+    padding: 20px 10 px;
+    font-size: 18px;
+    font-family: sans-serif;
+ 
+}
+
+.form-cta button {
+    padding: 1px 10px;
+    background-color: #e50914;
+    outline: none;
+    border: none;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 19px;
+}
+
+.gradiente {
+    background: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.8) 0,
+        rgba(0, 0, 0, 0) 60%,
+        rgba(0, 0, 0, 0.8) 100%
+      );
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+}
+
+.top-button {
+    padding: 1px 10px;
+    background-color: #e50914;
+    outline: #ffff;
+    border: none;
+    font: white;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 21px;
+}
