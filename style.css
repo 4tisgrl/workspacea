@@ -1,228 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  background-color: rgb(235, 218, 204);
+  font-family: sans-serif;
+  color: white;
 }
 
-.cliks {
-font-family: Courier;
-color: rgb(104, 55, 55);
-align-items: center;
-font-size: 18px;
-margin:auto;
+img {
+  display: block;
+  max-width: 100%;
 }
 
-.button {
-  height:750px;
-  weight: 230px;
-  color: rgb(235, 218, 204)
-  text-color:rgb(104, 55, 55)
-  font-family: Courier;
-  margin-left: 200px;
-  margin:auto;
-
-} 
-
-.conteudo {
-  height:960px;
-  margin:auto;
+.container {
+  max-width: 1130px;
+  margin: 0 auto;
 }
 
-.image {
-  image-rendering: auto;
-  height: 800px;
-  width: 500;
-  display: table-cell;
-  float:left;
+.header {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1790px;
+  top: 28px;
+  left: 56px;
 }
 
-.texto {
-  font-family: courier;
-  text-color: rgb(104, 55, 55);
-  display: table-cell;
-  float:left;
-  weight: 300px;
-  margin-top: -20px;
-  margin-left: 20px;
-
-}
-
-.fieldset {
-  width: 746px;
-  height: 132px;
-  font-family: courier;
-  font: size 16px;
-  color: rgb(104, 55, 55); 
-  margin-left: 70px;
-  padding: 6 px 12px 10px
+.header a {
+  display: inline-block;
+  background: #e50914;
+  color: white;
+  align-self: flex-start;
+  padding: 8px 18px;
+  text-decoration: none;
+  border-radius: 3px;
 }
 
 .main {
-    border-color: rgb(235, 218, 204)
-    background-image: url("about-filiale-1.jpg")
-  }
+  padding-top: 4rem;
+  height: 785px;
+  background: url("../img/bg.jpg") center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  box-sizing: border-box;
+}
 
-  .div-nav{
-    width: 1220px;
-    height: 1000px;
-    background-color: rgb(235, 218, 204);
-    color: rgb(104, 55, 55);
-    padding: 20px;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 18px;
-    border: 5px solid gray;
-    margin:auto;
+.main-child {
+  z-index: 1;
+  display: grid;
+  justify-items: center;
+}
 
-  }
-  
-  .flex-main {
-      width: 500px;
-      height: 500px;
-      display: flex;      
-      flex-wrap: wrap;    
-      flex-direction: row;
-      justify-content: space-around;    
-      
-  }
-  .child-main {
-      border: 1px solid black;
-      width: 20px;
-      height: 15px;
-      display: flex;
-      justify-content: space-between;  
-  }
- 
+.main h1 {
+  font-size: 64px;
+  max-width: 510px;
+}
 
+.main span {
+  font-size: 26px;
+  margin-top: 10px;
+}
 
-  .flex-div {
-      width: 500px;
-      height: 500px;
-      display: flex;      
-      flex-wrap: wrap;    
-      flex-direction: row;
-      justify-content: space-around;    
-      
-  }
-  .child-div {
-      border: 1px solid #FFFF;
-      width: 20px;
-      height: 15px;
-      display: flex;
-      justify-content: space-between;  
-  }
- 
+.form-cta {
+  display: grid;
+  grid-template-columns: 500px 250px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
 
+.form-cta input {
+  padding: 20px 10px;
+  font-size: 18px;
+  font-family: sans-serif;
+}
 
-  .flex-div {
-      width: 500px;
-      height: 500px;
-      display: flex;      
-      flex-wrap: wrap;    
-      flex-direction: row;
-      justify-content: space-around;    
-      
-  }
-  .child-div {
-      border: 1px solid #FFFF;
-      width: 20px;
-      height: 15px;
-      display: flex;
-      justify-content: space-between;  
-  }
- 
+.form-cta button {
+  background: #e50914;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
 
-;
-    
-    
-  }
+.form-cta button::after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 20px;
+  background: url("../img/seta.svg");
+  margin-left: 20px;
+}
 
-  .container {
-    height: 25px;
-    width: 320px;
-    border: 10px;
-    border: 1px solid rgb(235, 218, 204);
-    background-color: rgb(235, 218, 204);
-    font-family: courier;
-    font-size-adjust: unset;
-    color:rgb(104, 55, 55)    
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: auto;
-   
+.form-cta button:hover {
+  background: #f40612;
+}
 
-   
-  
-  }
+.main p {
+  font-size: 19px;
+}
 
-  
-  .flex-div {
-      width: 500px;
-      height: 500px;
-      display: flex;      
-      flex-wrap: wrap;    
-      flex-direction: row;
-      justify-content: space-around;
-      margin: auto;
-      
-  }
-  .child-div {
-      border: 1px solid black;
-      width: 20px;
-      height: 15px;
-      display: flex;
-      justify-content: space-between;  
-  }
- 
+.gradient {
+  background: rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
 
+.section {
+  background: black;
+  padding: 3rem 0;
+  border-top: 8px solid #222;
+}
 
-  .boxmodel1 {
-    width: 1220px;
-    height: 1000px;
-    background: rgb(235, 218, 204);
-    color: rgb(104, 55, 55);
-    padding: 20px;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 18px;
-   
-  }
+.section h1 {
+  font-size: 50px;
+  margin-bottom: 16px;
+}
 
-  
- 
+.section p {
+  font-size: 26px;
+}
 
-  .my-div {
-    height: 120px;
-    width: 120px;
-    border: 500px;
-    border: 1px solid rgb(235, 218, 204);
-    background-color: rgb(235, 218, 204);
-    font-family: courier;   
-    display: grid;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin: auto;
-  }
-  .logodiv {
-    height: 120px;
-    width: 600px;
-    border: 500px;
-    border: 1px solid rgb(235, 218, 204);
-    background-color: rgb(235, 218, 204);
-    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    margin:auto;
-  }
+.grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  align-items: center;
+}
 
+.img-tv {
+  position: relative;
+}
 
+.img-tv img {
+  position: relative;
+  z-index: 1;
+}
 
-  <!--Fontes-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Homemade+Apple&display=swap" rel="stylesheet">
-      
+.video-tv {
+  position: absolute;
+  width: 400px;
+  top: 80px;
+  left: 70px;
+}
+
+.download .grid > div:first-child {
+  order: 2;
+}
+
+.download .img-tv {
+  order: 1;
+}
+
+.device-pile .video-tv {
+  width: 340px;
+  top: 45px;
+  left: 100px;
+}
+
+.footer .form-cta {
+  margin-top: 0;
+}
+
+.footer {
+  padding: 4rem 0 2rem 0;
+  border-top: 8px solid #222;
+  background: black;
+  text-align: center;
+  display: grid;
+  justify-items: center;
+}
+
+.footer p {
+  margin-top: 2rem;
+  color: #757575;
+  font-size: 13px;
+}
